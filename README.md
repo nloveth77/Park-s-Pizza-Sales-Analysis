@@ -22,26 +22,20 @@ Story of Data:
 The dataset was derived from a consolidated Kaggle file and it has a total number of 48620 rows and 12 columns. While convenient for quick review, this structure is inefficient for detailed BI analysis. The first step was to use PgAdmin4 to apply a crucial data warehousing concept: Normalization.
 This Normalization separates data into smaller, much more manageable, and distinct tables (Dimensions and Facts), eliminating data redundancy and ensuring data integrity.
 With the use of CREATE TABLE AS SELECT DISTINCT queries, i was able to decompose the wide source table (pizza_sales) into four distinct tables to form a Star Schema:
+
+
 Table Name
 Type
 Core Content
 Primary Key
-pizza_id
-Fact (The Event)
-Records quantity and the calculated (line_item_revenue).
-pizza_id
-orders
-Dimension (Time)
-Records the unique (order_id, date, and time) of the transaction.
-order_id
-pizzas
-Dimension (Product SKU)
-Records the (pizza_id, size, and unit_price).
-pizza_id
-pizza_types
-Dimension (Product Details)
-Records the  (pizza_type_id, name, category, and ingredients).
-pizza_type_id
+
+### Data Warehouse Structure
+
+| Table Name | Type | Core Content | Primary Key |
+|---|---|---|---|
+| **pizza_id** | Fact (The Event) | Records quantity and the calculated (`line_item_revenue`). | `pizza_id` |
+| **orders** | Dimension (Time) | Records the unique (`order_id`, date, and time) of the transaction. | `order_id` |
+| **pizzas** | Dimension (Product SKU) | Records the (`pizza_id`, size, and `unit_price`). | `pizza_id` |
 
 
 
@@ -52,22 +46,17 @@ The major KPIS includes:
 KPI Title
 SQL Code
 Result
-Total Revenue
-SUM(total_price)
-$817,860.05
-Average order value
-SUM(total_price)/count(distinct order_id)
-38.307
-Total Orders
-COUNT(DISTINCT order_id)
-21,350
-Total pizza sold
-SUM(quantity) from pizza_sold
-$50k
-Average pizza per order
- COUNT(DISTINCT order_id) / COUNT(DISTINCT order_date) 
-59
 
+
+### Key Performance Indicators
+
+| KPI | Calculation | Result |
+|---|---|---:|
+| **Total Revenue** | `SUM(total_price)` | **$817,860.05** |
+| **Average Order Value** | `SUM(total_price) / COUNT(DISTINCT order_id)` | **38.307** |
+| **Total Orders** | `COUNT(DISTINCT order_id)` | **21,350** |
+| **Total Pizza Sold** | `SUM(quantity)` from `pizza_sold` | **50K** |
+| **Average Pizza per Order** | `COUNT(DISTINCT order_id) / COUNT(DISTINCT order_date)` | **59** |
 
 
 
@@ -86,37 +75,34 @@ In this page I recorded this important point: "What Pizza is actually selling an
 Visual Title
 Focus
 Result/Observation
-Monthly Revenue Trend
-Seasonality
-Sales are relatively stable, with peak sales in May and July (ca. $71K - $72K) and obvious declines in Sep/Oct (ca. $64K).
-Top 5 Bestsellers
-Menu Profitability
-The Thai Chicken Pizza and BBQ Chicken Pizza generates the highest revenue for the business.
-Bottom 5 Performers
-Menu Inefficiency
-The Brie Carre Pizza generates the lowest revenue ($11.6K) and is an inventory liability.
-Revenue by Category
-Product Mix
-Categories are well-balanced, with Classic leading the revenue contribution.
-Quantity by Size
-Customer Preference
-The Large (L) size is overwhelmingly dominant (38% of quantity). XL/XXL are marginal.
+
+
+### Business Performance Insights
+
+| Visual Title | Focus | Result/Observation |
+|---|---|---|
+| **Monthly Revenue Trend** | Seasonality | Sales are relatively stable, with peak sales in **May and July** (ca. $71K–$72K) and obvious declines in **Sep/Oct** (ca. $64K). |
+| **Top 5 Bestsellers** | Menu Profitability | The **Thai Chicken Pizza** and **BBQ Chicken Pizza** generate the highest revenue for the business. |
+| **Bottom 5 Performers** | Menu Inefficiency | The **Brie Carre Pizza** generates the lowest revenue ($11.6K) and is an inventory liability. |
+| **Revenue by Category** | Product Mix | Categories are well-balanced, with **Classic** leading the revenue contribution. |
+| **Quantity by Size** | Customer Preference | The **Large (L) size** is overwhelmingly dominant (38% of quantity). XL/XXL are marginal. |
+
+
 
 Page 2: Operational Efficiency & Demand Analysis
 In this second page I recorded this important point: "When is the busiest time of the business, and the need for proper staffing?"
 Visual Title
 Focus
 Result/Observation
-Orders by Day of Week
-Daily Traffic
-Friday is the clear peak day for orders; Sunday is the slowest day.
-Quantity by Day of Week
-Labor Allocation
-Friday sells the most pizzas (8,242 units), requiring max preparation and staffing.
-Revenue by Day of Week
-Daily Financials
-Sunday revenue is the lowest, providing a safe day for scheduled deep cleaning or maintenance.
 
+
+### Operational Efficiency & Demand Analysis
+
+| Visual Title | Focus | Result/Observation |
+|---|---|---|
+| **Orders by Day of Week** | Daily Traffic | **Friday** is the clear peak day for orders; **Sunday** is the slowest day. |
+| **Quantity by Day of Week** | Labor Allocation | **Friday** sells the most pizzas (**8,242 units**), requiring maximum preparation and staffing. |
+| **Revenue by Day of Week** | Daily Financials | **Sunday** revenue is the lowest, providing a safe day for scheduled deep cleaning or maintenance. |
 
 
 
