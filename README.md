@@ -17,7 +17,11 @@ The major aim for this analysis is to analyze the operations and sales report of
 
 
 
+
 <img width="1364" height="758" alt="Park&#39;s Pizza Dasboard" src="https://github.com/user-attachments/assets/b079e053-f990-48bc-b9e5-20c7344b5f90" />
+
+
+
 
 
 Story of Data:
@@ -110,7 +114,11 @@ Result/Observation
 
 
 
+
+
 <img width="1368" height="776" alt="Time-Based Dashboard Park&#39;s Pizza" src="https://github.com/user-attachments/assets/2847f12a-d9a9-4564-b2ab-9701a96c0ee7" />
+
+
 
 
 
@@ -130,7 +138,13 @@ To this industry, generating more revenue while satisfying their customers is ex
 
 Post-Analysis Observation
 
+
+
+
+
 <img width="1336" height="752" alt="Obsevation Board Park&#39;s Pizza" src="https://github.com/user-attachments/assets/5a9ffe2b-d4bf-41dc-9d60-c4bb0daf1b44" />
+
+
 
 
 
@@ -191,7 +205,12 @@ Chicken pizzas generate slightly lower sales (~11K).
 
 Post-Analysis Recommendation:
 
+
+
+
 <img width="1361" height="771" alt="Recommendation Board Park&#39;s Pizza" src="https://github.com/user-attachments/assets/cecf40a1-f103-4d37-b5f3-446cab6ddadd" />
+
+
 
 
 
