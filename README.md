@@ -28,6 +28,7 @@ Story of Data:
 
 
 The dataset was derived from a consolidated Kaggle file and it has a total number of 48620 rows and 12 columns. While convenient for quick review, this structure is inefficient for detailed BI analysis. The first step was to use PgAdmin4 to apply a crucial data warehousing concept: Normalization.
+
 This Normalization separates data into smaller, much more manageable, and distinct tables (Dimensions and Facts), eliminating data redundancy and ensuring data integrity.
 With the use of CREATE TABLE AS SELECT DISTINCT queries, i was able to decompose the wide source table (pizza_sales) into four distinct tables to form a Star Schema:
 
@@ -48,6 +49,7 @@ Primary Key
 
 
 Analytical Querying For KPIs
+
 Before uploading my dataset into Power BI for visualization, I had to write and execute several SQL codes to validate my key metrics and data integrity as a foundation for my PowerBI visualization.
 The major KPIS includes:
 
@@ -71,15 +73,31 @@ Result
 Data Modeling and Visualization Using Power BI
 I had to connect the four normalized to Power BI, and by this action the immediate creation of a Star Schema model was activated, where the order_details Fact table sits in the center, linked to all Dimension tables.
 
+ 
  Key Relationships Between SQL and Power BI
+
 The PgAdmin4 database (SQL) and Power BI work in aligned perfectly:
-SQL's Role (Data Transformation): I used SQL to break down the analysis, did some extractions, minor cleanings, and Normalization. SQL is optimized for defining relationships and aggregating data directly from the source.
-Power BI's Role (Data Modeling, DAX expression and Visualization): Power BI being a visualization tool, helped me define the model relationships, create dynamic/new DAX Measures (like comparing revenue Year-over-Year), and build the user-friendly visuals that deliver the final narrative.
-Appending New Columns with Power Query Editor: so, i used the Power Query editor to append new columns like Days of the Week (DOW) column and transform details in order_date column and pizza_size column. 
+
+
+1. SQL's Role (Data Transformation): I used SQL to break down the analysis, did some extractions, minor cleanings, and Normalization. SQL is optimized for defining relationships and aggregating data directly from the source.
+
+
+2. Power BI's Role (Data Modeling, DAX expression and Visualization): Power BI being a visualization tool, helped me define the model relationships, create dynamic/new DAX Measures (like comparing revenue Year-over-Year), and build the user-friendly visuals that deliver the final narrative.
+
+
+3. Appending New Columns with Power Query Editor: so, i used the Power Query editor to append new columns like Days of the Week (DOW) column and transform details in order_date column and pizza_size column. 
+
+
+
 Structural Report & Visualization
+
 I imputed a two-page structured report focusing on the dynamics in client's objectives and preference, whilst being conscious of the maximum 6-chart limit per page:
+
+
 Page 1:  An Overview of Executive Sales & Performance;
+
 In this page I recorded this important point: "What Pizza is actually selling and where exactly is the huge revenue coming from?"
+
 Visual Title
 Focus
 Result/Observation
@@ -98,7 +116,9 @@ Result/Observation
 
 
 Page 2: Operational Efficiency & Demand Analysis
+
 In this second page I recorded this important point: "When is the busiest time of the business, and the need for proper staffing?"
+
 Visual Title
 Focus
 Result/Observation
@@ -318,8 +338,10 @@ Develop marketing campaigns targeting veggie lovers to grow that category.
 
 
 Conclusion:
+
 From the overall analysis, Park’s Pizza shows strong performance driven mainly by large size pizzas, chicken/classic varieties, and high weekend demand. To further sustain growth, the business needs to strengthen its best-selling products, improve low-performing items, and use targeted promotions and bundles to increase order value and weekday sales.
 
 
 Reference: 
+
 Reference: https://topmate.io/dat  (Youtube)
