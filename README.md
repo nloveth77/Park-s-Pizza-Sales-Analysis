@@ -149,56 +149,81 @@ Post-Analysis Observation
 
 
 Overall Business Performance
+
 Observation
 The business generated $817.9K in total revenue from 21K orders.
 The average order value is $38.31 with customers buying 2.32 pizzas per order.
 This indicates customers typically purchase 2 pizzas per transaction, suggesting potential to increase basket size
+
+
 Top Performing Pizzas
+
 Observation
-The Thai Chicken and Barbecue Chicken pizzas generate the highest revenue (~$43K each).
+The Thai Chicken and Barbecue Chicken pizzas generate the highest revenue ($43K each).
 These products clearly drive a large portion of total pizza revenue.
 Demand for chicken-based pizzas appears strong.
+
+
 Low Performing Pizzas
+
 Observation
 Pizzas such as Spinach, Mediterranean, and Brie-based options generate the lowest revenue.
 These products may not align with the majority of customer taste preferences.
 Pizza Size Demand
 Observation
-• Large pizzas dominate sales (~19K units)**.
+• Large pizzas dominate sales (19K units)**.
 • Medium and small sizes follow but with noticeably lower demand.
 • Extra Large and XX-Large pizzas have almost no sales**, suggesting limited market demand.
+
+
 Revenue by Pizza Category
+
 Observation
-Classic pizzas generate the highest revenue (~$220K)**.
+Classic pizzas generate the highest revenue ($220K)**.
 • Supreme and Chicken categories follow closely.
 • Veggie pizzas generate the **lowest revenue among the main categories**.
+
+
 Revenue by Pizza Category
+
 Observation
-•Classic pizzas generate the highest revenue (~$220K)
+•Classic pizzas generate the highest revenue ($220K)
 • Supreme and Chicken categories follow closely.
 • Veggie pizzas generate the **lowest revenue among the main categories**.
+
+
 Revenue by Day of the Week
+
 Observation
-Friday generates the highest revenue (~$136K).
+Friday generates the highest revenue ($136K).
 Saturday and Thursday also perform strongly.
-Sunday records the lowest revenue (~$99K).
+Sunday records the lowest revenue ($99K).
 Revenue clearly increases toward the end of the week.
+
+
 Quantity Sold by Day of the Week
+
 Observation
-Friday has the highest pizza sales (~8.2K).
-Saturday and Thursday follow closely (~7.5K each).
-Sunday has the lowest quantity sold (~6.0K).
+Friday has the highest pizza sales (8.2K).
+Saturday and Thursday follow closely (7.5K each).
+Sunday has the lowest quantity sold (6.0K).
 Demand strongly aligns with weekend dining behavior.
+
+
 Total Orders by Day of the Week (Treemap)
+
 Observation
-Friday has the highest number of orders (~4K).
+Friday has the highest number of orders (4K).
 Most other days record around 3K orders.
 Order distribution shows consistent weekday demand but strong weekend spikes.
+
+
 Pizza Sales by Category
+
 Observation
-Classic pizzas lead sales (~15K).
-Veggie and Supreme categories follow (~12K each).
-Chicken pizzas generate slightly lower sales (~11K).
+Classic pizzas lead sales (15K).
+Veggie and Supreme categories follow (12K each).
+Chicken pizzas generate slightly lower sales (11K).
 
 
 
@@ -215,45 +240,81 @@ Post-Analysis Recommendation:
 
 
 Overall Business Performance
+
+
 • Introduce **bundle promotions (e.g., buy 2 pizzas + drink deals)** to increase the number of pizzas per order.
+
 • Implement **upselling strategies at checkout** such as sides, beverages, or desserts.
+
 • Create **loyalty programs or discounts for orders above $40** to increase average order value.
 Top Performing Pizzas
+
 • Promote these pizzas as **“Best Sellers” on the menu and marketing channels**.
+
 • Ensure **consistent ingredient supply** to prevent stock shortages.
+
 • Consider introducing **new variations of chicken pizzas** to capitalize on customer preferences.
 Low Performing Pizzas
+
 • Evaluate **pricing or recipe improvements** to make them more appealing.
+
 • Test **limited-time promotions or discounts** to stimulate demand.
+
 • If performance remains weak, consider **removing them from the menu and replacing them with new options**.
 Pizza Size Demand
+
 • Focus marketing on **large pizzas**, especially for **family or group meal deals**.
+
 • Consider **revising pricing or promotions for XL sizes** to increase demand.
+
 • Evaluate whether **XXL pizzas should remain on the menu**.
 Revenue by Pizza Category
+
 • Expand the **classic pizza menu with new variations**.
+
 • Use classic pizzas as **anchor products in promotions and bundles**.
+
 • Develop marketing campaigns targeting **veggie lovers** to grow that segment.
 Revenue by Pizza Category
+
 • Introduce **seasonal promotions during low-performing months**.
+
 • Run **targeted marketing campaigns and discounts** during slower periods.
+
 • Align **inventory and staffing levels with peak demand months**.
+
+
 Revenue by Day of the Week
 Increase staffing and inventory preparation for Fridays and Saturdays to handle peak demand.
+
 Launch Sunday promotional deals such as “Sunday Family Pizza Specials” to boost sales.
+
 Use Thursday promotions (e.g., “Pre-Weekend Deals”) to capture early weekend demand.
+
 Quantity Sold by Day of the Week
+
 Focus marketing campaigns and advertising around weekends.
+
 Introduce weekend bundle deals to maximize revenue during high-traffic periods.
+
 Encourage weekday orders with lunch or midweek discounts.
+
 Total Orders by Day of the week
+
 Optimize delivery logistics and staff scheduling for Friday evenings.
+
 Implement fast-track ordering systems during peak hours to reduce delays.
+
 Introduce weekday office lunch promotions to increase weekday orders.
+
 Pizza Sales by Category
+
 Expand the classic pizza menu, as it drives the most volume.
+
 Create combo offers featuring classic pizzas.
+
 Develop marketing campaigns targeting veggie lovers to grow that category.
+
 
 
 Conclusion:
