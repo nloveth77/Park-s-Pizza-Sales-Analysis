@@ -8,7 +8,9 @@ The major dataset used for this analysis is the Pizza Sales Data for Park’s Pi
 
 
 
+
 Project Objective
+
 
 The major aim for this analysis is to analyze the operations and sales report of Park’s Pizza for the year 2015, and this analysis further shades more analysis on the of March 2015 to help the stakeholders of this project make data-driven decisions for the business in the next coming year.
 
@@ -19,6 +21,8 @@ The major aim for this analysis is to analyze the operations and sales report of
 
 
 Story of Data:
+
+
 The dataset was derived from a consolidated Kaggle file and it has a total number of 48620 rows and 12 columns. While convenient for quick review, this structure is inefficient for detailed BI analysis. The first step was to use PgAdmin4 to apply a crucial data warehousing concept: Normalization.
 This Normalization separates data into smaller, much more manageable, and distinct tables (Dimensions and Facts), eliminating data redundancy and ensuring data integrity.
 With the use of CREATE TABLE AS SELECT DISTINCT queries, i was able to decompose the wide source table (pizza_sales) into four distinct tables to form a Star Schema:
