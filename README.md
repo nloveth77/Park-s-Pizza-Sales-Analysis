@@ -1,6 +1,6 @@
 # Park-s-Pizza-Sales-Analysis
 
-
+Introduction
 
 This project successfully transformed one year of raw transactional data into a flexible Star Schema data model and a two-page interactive dashboard in Power BI. The analysis revealed a healthy core business with $817,860.05 in total revenue, but identified clear operational bottlenecks and menu inefficiencies.
 
@@ -70,7 +70,7 @@ Result
 
 
 
-Data Modeling and Visualization Using Power BI
+Data Modeling and Visualization Using Power BI:
 I had to connect the four normalized to Power BI, and by this action the immediate creation of a Star Schema model was activated, where the order_details Fact table sits in the center, linked to all Dimension tables.
 
  
@@ -89,7 +89,7 @@ The PgAdmin4 database (SQL) and Power BI work in aligned perfectly:
 
 
 
-Structural Report & Visualization
+Structural Report & Visualization:
 
 I imputed a two-page structured report focusing on the dynamics in client's objectives and preference, whilst being conscious of the maximum 6-chart limit per page:
 
